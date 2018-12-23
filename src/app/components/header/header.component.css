@@ -1,0 +1,110 @@
+header {
+    background: #111;
+}
+
+.headline {
+    position: relative;
+    height: 400px;
+    color: #fff;
+    text-align: center;
+    background: url('https://farm9.staticflickr.com/8088/8363737128_b76782c7a2_b.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.headline:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(17, 17, 17, 0.5);
+}
+
+.inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    z-index: 10;
+    transform: translateX(-50%) translateY(-50%);
+    animation: fade-in 0.75s 0.25s ease-in forwards;
+}
+
+.inner h1 {
+    margin: 0;
+    font-size: 4em;
+    line-height: 1.2em;
+}
+
+.inner p {
+    margin: 0;
+    font-size: 1.4em;
+    font-style: italic;
+    font-family: serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav.scrolled {
+    background: rgba(17, 17, 17, 0.9);
+}
+
+nav ul {
+    float: right;
+    list-style: none;
+    padding: 25px;
+    margin: 0;
+}
+
+nav li {
+    float: left;
+}
+
+nav a {
+    font-size: 0.9em;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0 0 20px;
+    display: block;
+}
+
+nav a:hover {
+    color: #ededed;
+}
+
+.logo {
+    height: 75px;
+    float: left;
+    content: url('../../../assets/images/angular.png');
+    position: absolute;
+    top: 25px;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.flag {
+    display: inline-block;
+    width: 48px;
+    height: 48px;
+    background: url('../../../assets/images/flags.png') no-repeat;
+}
+
+.flag.flag-gb {
+    background-position: -48px 0;
+}
+
+.flag.flag-it {
+    background-position: 0 -48px;
+}
