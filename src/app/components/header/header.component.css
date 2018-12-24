@@ -57,7 +57,7 @@ nav.scrolled {
 nav ul {
     float: right;
     list-style: none;
-    padding: 25px;
+    padding: 10px;
     margin: 0;
 }
 
@@ -78,11 +78,10 @@ nav a:hover {
 }
 
 .logo {
-    height: 75px;
+    height: 70px;
     float: left;
     content: url('../../../assets/images/angular.png');
     position: absolute;
-    top: 25px;
 }
 
 @keyframes fade-in {
