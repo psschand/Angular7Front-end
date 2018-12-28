@@ -1,9 +1,7 @@
-<mat-drawer-container autosize [hasBackdrop]="false">
-  <mat-drawer class="side-drawer" mode="push" opened>Drawer content
+<mat-drawer-container [hasBackdrop]="false">
+  <mat-drawer [ngClass]="show ? 'side-drawer-open' : 'side-drawer-close'" mode="push" opened (mouseenter)="mostra()" (mouseleave)="mostra()">Drawer content
     <br>
-    <button mat-button>Basic</button>
-    <br>
-    <button mat-button (mouseenter)="mostra()" (mouseleave)="mostra()">show</button>
+    <button mat-button>show</button>
     <br>
     <p *ngIf="show">acido desossiribonucleico</p>
   </mat-drawer>

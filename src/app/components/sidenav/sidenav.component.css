@@ -1,7 +1,15 @@
-mat-drawer-container{
-    min-height: 750px;
+mat-drawer-container {
+    min-height: 100vh;
 }
 
-.side-drawer{
+.side-drawer-close {
     background-color: #35A62D;
-  }
+    width: 100px;
+    transition: 0.25s;
+}
+
+.side-drawer-open {
+    background-color: #35A62D;
+    width: 250px;
+    transition: 0.5s;
+}
