@@ -1,9 +1,10 @@
 <mat-drawer-container [hasBackdrop]="false">
-  <mat-drawer [ngClass]="show ? 'side-drawer-open' : 'side-drawer-close'" mode="push" opened (mouseenter)="mostra()" (mouseleave)="mostra()">Drawer content
-    <br>
-    <button mat-button>show</button>
-    <br>
-    <p *ngIf="show">acido desossiribonucleico</p>
+  <mat-drawer [ngClass]="show ? 'side-drawer-open' : 'side-drawer-close'" mode="push" opened (mouseenter)="mostra()" (mouseleave)="mostra()">
+    <ul class="side-drawernav">
+      <li><button class="button-sidenav" mat-button><mat-icon>help</mat-icon><span *ngIf="show">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opzione 1</span></button></li>
+      <li><button class="button-sidenav" mat-button><mat-icon>school</mat-icon><span *ngIf="show">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opzione 2</span></button></li>
+      <li><button class="button-sidenav" mat-button><mat-icon>contact_mail</mat-icon><span  *ngIf="show">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Opzione 3</span></button></li>
+    </ul>
   </mat-drawer>
   <mat-drawer-content>Main content</mat-drawer-content>
 </mat-drawer-container>

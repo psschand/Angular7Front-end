@@ -3,13 +3,35 @@ mat-drawer-container {
 }
 
 .side-drawer-close {
-    background-color: #35A62D;
-    width: 100px;
+    background-color: rgba(17, 17, 17);
+    width: 70px;
     transition: 0.25s;
 }
 
 .side-drawer-open {
-    background-color: #35A62D;
-    width: 250px;
+    background-color: rgba(17, 17, 17);
+    width: 170px;
     transition: 0.5s;
+}
+
+.side-drawernav {
+    list-style: none;
+    color: lightgrey;
+    padding: 0;
+    padding-top: 15px;
+}
+
+.side-drawernav li {
+    padding-right: 10px;
+    margin: 15px 0;
+}
+
+.button-sidenav {
+    display: block;
+    width: 100%;
+    text-align: justify;
+}
+
+.button-sidenav:hover {
+    background-color: rgba(255, 255, 255, 0.25)!important;
 }
