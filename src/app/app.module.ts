@@ -8,21 +8,30 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MaterialModule } from './material.module';
 import { SidenavComponent } from './components/sidenav/sidenav.component';
+import { PageInfoComponent } from './components/pages/page-info/page-info.component';
+import { PageHomeComponent } from './components/pages/page-home/page-home.component';
+import { PageNotfoundComponent } from './components/pages/page-notfound/page-notfound.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    SidenavComponent
+    SidenavComponent,
+    PageInfoComponent,
+    PageHomeComponent,
+    PageNotfoundComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
   ],
-  providers: [],
+  providers: [
+
+  ],
   bootstrap: [AppComponent]
 })
+
 export class AppModule { }
