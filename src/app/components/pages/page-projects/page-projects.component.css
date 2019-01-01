@@ -1,0 +1,8 @@
+.project-card {
+    max-width: 400px;
+}
+
+.header-image-card1 {
+    background-image: url('./../../../../assets/images/angular.png');
+    background-size: cover;
+}

@@ -1,0 +1,21 @@
+iframe {
+    border: 0px;
+    min-width: 100vh;
+    min-height: 90vh;
+}
+
+.frame-container {
+    position: relative;
+    padding: 20px;
+    padding-left: 25%;
+}
+
+.button-container{
+    height: 60px;
+}
+
+.download-button {
+    float: right;
+    margin-top: 20px;
+    margin-right: 40px;
+}
