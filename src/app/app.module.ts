@@ -1,3 +1,4 @@
+import { PageSubmissionformComponent } from './components/pages/page-submissionform/page-submissionform.component';
 import { PageDocumentViewerComponent } from './components/pages/page-document-viewer/page-document-viewer.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,6 +15,8 @@ import { PageHomeComponent } from './components/pages/page-home/page-home.compon
 import { PageNotfoundComponent } from './components/pages/page-notfound/page-notfound.component';
 import { PageProjectsComponent } from './components/pages/page-projects/page-projects.component';
 
+import { TranslateModule } from '@ngx-translate/core';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,6 +27,7 @@ import { PageProjectsComponent } from './components/pages/page-projects/page-pro
     PageHomeComponent,
     PageDocumentViewerComponent,
     PageProjectsComponent,
+    PageSubmissionformComponent,
     PageNotfoundComponent
   ],
   imports: [
@@ -31,6 +35,7 @@ import { PageProjectsComponent } from './components/pages/page-projects/page-pro
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
+    TranslateModule.forRoot()
   ],
   providers: [
 

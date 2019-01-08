@@ -1,3 +1,4 @@
+import { PageSubmissionformComponent } from './components/pages/page-submissionform/page-submissionform.component';
 import { PageDocumentViewerComponent } from './components/pages/page-document-viewer/page-document-viewer.component';
 import { PageNotfoundComponent } from './components/pages/page-notfound/page-notfound.component';
 import { PageInfoComponent } from './components/pages/page-info/page-info.component';
@@ -10,7 +11,8 @@ const routes: Routes = [
   { path: 'home', component: PageHomeComponent },
   { path: 'info', component: PageInfoComponent },
   { path: 'projects', component: PageProjectsComponent },
-  { path: 'my-cv', component: PageDocumentViewerComponent },
+  { path: 'my_cv', component: PageDocumentViewerComponent },
+  { path: 'contact_me', component: PageSubmissionformComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: '**', component: PageNotfoundComponent }
 ];
