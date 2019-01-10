@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import $ from 'jquery';
 
 @Component({
@@ -9,17 +10,24 @@ import $ from 'jquery';
 
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  translate: TranslateService;
+
+  constructor(translate: TranslateService) {
+    this.translate = translate;
+  }
 
   ngOnInit() {
   }
 
   onClickEng() {
     console.log('eng');
+    this.translate.use('en');
+
   }
 
   onClickIta() {
     console.log('ita');
+    this.translate.use('it');
   }
 
 

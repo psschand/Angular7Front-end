@@ -15,7 +15,14 @@ import { PageHomeComponent } from './components/pages/page-home/page-home.compon
 import { PageNotfoundComponent } from './components/pages/page-notfound/page-notfound.component';
 import { PageProjectsComponent } from './components/pages/page-projects/page-projects.component';
 
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+// AoT requires an exported function for factories
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}
 
 @NgModule({
   declarations: [
@@ -35,7 +42,14 @@ import { TranslateModule } from '@ngx-translate/core';
     AppRoutingModule,
     BrowserAnimationsModule,
     MaterialModule,
-    TranslateModule.forRoot()
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
   ],
   providers: [
 
